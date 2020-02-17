@@ -40,12 +40,10 @@
     $('#from').datepicker({
         dateFormat: "yy-mm-dd"
     }).datepicker(
-        'setDate', '-7d'
+        'setDate', '-10d'
     );
 
     $('#to').datepicker({
-        setDate: '-1d',
-        defaultDate: '-1d',
         dateFormat: "yy-mm-dd"
     }).datepicker(
         'setDate', '0d'
