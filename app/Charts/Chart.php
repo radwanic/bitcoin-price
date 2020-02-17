@@ -6,7 +6,7 @@ namespace App\Charts;
  * Class Chart
  * @package App\Charts
  */
-class Chart
+class Chart implements Convertible
 {
     /**
      * @var
@@ -44,5 +44,12 @@ class Chart
     public function getAttribute($key)
     {
         return @$this->attributes[$key];
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray(): array {
+        return (array)$this->attributes;
     }
 }

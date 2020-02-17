@@ -30,9 +30,8 @@ class ChartJSTest extends TestCase
     {
         $chart = new ChartJS();
 
-        $this->assertIsArray($chart->data());
-        $this->assertArrayHasKey('type', $chart->data());
-        $this->assertArrayHasKey('data', $chart->data());
+        $this->assertIsArray($chart->toArray());
+        $this->assertArrayHasKey('type', $chart->toArray());
+        $this->assertArrayHasKey('data', $chart->toArray());
     }
-
 }
